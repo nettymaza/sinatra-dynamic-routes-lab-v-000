@@ -31,14 +31,14 @@ class App < Sinatra::Base
     answer = ''
 
     if params[:operation] == 'add'
-      add  (number1 + number2).to_s
+      answer = (number1 + number2).to_s
     elsif params[:operation] == 'subtract'
-      add << (number1 - number2).to_s
+      answer = (number1 - number2).to_s
     elsif params[:operation] == 'multiply'
-      add << (number1 * number2).to_s
+      answer = (number1 * number2).to_s
     elsif params[:operation] == 'divide'
-      add << (number1 / number2).to_s
-      
+      answer = (number1 / number2).to_s
+
   end
 
 end
