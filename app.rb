@@ -13,8 +13,8 @@ class App < Sinatra::Base
   end
 
   get '/say/:number/:phrase' do
-    
-    params[:phrase].to_i.times do
+
+    params[:phrase].times do
       phrase += params[:phrase]
     end
     phrase
@@ -38,7 +38,7 @@ class App < Sinatra::Base
       answer = (number1 * number2).to_s
     elsif params[:operation] == 'divide'
       answer = (number1 / number2).to_s
-    end 
+    end
   end
 
 end
