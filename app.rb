@@ -18,7 +18,7 @@ class App < Sinatra::Base
       phrase += params[:phrase]
     end
 
-    answer
+    phrase
   end
 
 
